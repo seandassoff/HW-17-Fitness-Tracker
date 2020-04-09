@@ -1,0 +1,25 @@
+{
+  "name": "HW-17-Fitness-Tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seandassoff/HW-17-Fitness-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seandassoff/HW-17-Fitness-Tracker/issues"
+  },
+  "homepage": "https://github.com/seandassoff/HW-17-Fitness-Tracker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.1",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7"
+  }
+}

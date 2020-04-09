@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" />
+    <title>Workout Tracker</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2>Status: <span id="status" class="primary">Creating</span></h2>
+          <p>Create a new workout by submitting its name & description</p>
+          <p>Click a Previous Workout Plan below to modify</p>
+          <h2 class="mt-3">Create Workout Plan</h2>
+          <div class="mt-3">
+            <form action="">
+              <input
+                type="text"
+                id="exercise-name"
+                class="form-control mt-2"
+                name="name"
+                placeholder="Workout Name"
+                autofocus
+              />
+              <input
+                type="text"
+                id="description"
+                class="form-control mt-2"
+                name="description"
+                placeholder="Exercise Description"
+                autofocus
+              />
+              <h6 class="mt-4">Exercise Difficulty</h6>
+              <label for="easy" class="mx-2 p-3">
+                <input
+                  type="radio"
+                  class="radio-inline mx-2 p-3"
+                  name="difficulty"
+                  id="easy"
+                  value="easy"
+                  checked
+                />Easy
+              </label>
+              <label for="medium">
+                <input
+                  type="radio"
+                  class="radio-inline mx-2 p-3"
+                  name="difficulty"
+                  id="medium"
+                  value="medium"
+                />Medium
+              </label>
+              <label for="hard">
+                <input
+                  type="radio"
+                  class="radio-inline mx-2 p-3"
+                  name="difficulty"
+                  id="hard"
+                  value="hard"
+                />Hard
+              </label>
+              <div id="action-button">
+
+                <button class="mx-2 p-3 btn btn-danger w-100 mt-0" id="make-new" >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+     <div class="col-sm-8">
+
+      <div>
+        <!-- <h4>List of Exercises included in: <span id="workout2" class="primary"></span> workout</h4> -->
+        <h2>Previous Workout Plans</h2>
+      </div>
+      <div class="row bg-white" style="min-height: 200px;">
+        <div id="results"></div>
+      </div>
+     </div>
+      </div>
+    </div>
+
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
